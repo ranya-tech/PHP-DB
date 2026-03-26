@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #615033; 
+    color: #f9efe2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+h1 {
+    display: inline-block;
+    padding: 8px 15px;
+    margin-bottom: 30px;
+    color: #f9efe2;
+    border-bottom: 4px solid #423620; 
+    border-left: 10px solid #e4c07d;  
+    line-height: 1;
+}
+
+body > a {
+    text-decoration: none;
+    color: #e4c07d;
+    font-weight: 600;
+    margin-bottom: 30px;
+    border: 1px solid #e4c07d;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+body > a:hover {
+    background-color: #e4c07d;
+    color: #423620;
+}
+
+.msg {
+    background-color: #423620;
+    color: #e4c07d;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border-left: 5px solid #e4c07d;
+    margin-bottom: 20px;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.card {
+    background-color: #423620;
+    border: 3px solid #e4c07d;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.4);
+}
+
+.card h4 {
+    color: #f3dcb9;
+    font-size: 1.4rem;
+    border-bottom: 2px solid #605032;
+    padding-bottom: 8px;
+}
+
+.card p {
+    font-size: 1.1rem;
+    color: #f9efe2;
+}
+
+.card p strong {
+    color: #e4c07d;
+    margin-right: 5px;
+}
+
+.card a {
+    text-decoration: none;
+    color: #423620;
+    background-color: #e4c07d;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: auto;
+    transition: 0.3s;
+}
+
+.card a:hover {
+    background-color: #f3dcb9;
+    transform: scale(1.02);
+}

@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #615033; 
+    color: #f9efe2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    min-height: 100vh;
+}
+
+form {
+    margin-bottom: 30px;
+    display: flex;
+    gap: 10px;
+    background: #423620;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #e4c07d;
+}
+
+form input {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #605032;
+    background: #151007;
+    color: #f9efe2;
+    outline: none;
+}
+
+form button {
+    background: #e4c07d;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #f3dcb9;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.container > div {
+    background-color: #423620;
+    border: 3px solid #e4c07d;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.container > div:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.4);
+}
+
+.container div h3 {
+    color: #f3dcb9;
+    font-size: 1.4rem;
+    border-bottom: 2px solid #605032;
+    padding-bottom: 8px;
+    margin-bottom: 5px;
+}
+
+.container div p {
+    font-size: 1rem;
+    color: #f9efe2;
+    line-height: 1.5;
+}
+.container div a {
+    text-decoration: none;
+    color: #e4c07d;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.container div a[href*="supprimer"] {
+    color: #ff6b6b; 
+    margin-left: 15px;
+}
+.container div a:hover {
+    text-decoration: underline;
+    transform: scale(1.05);
+}
+.total {
+    display: inline-block;  
+    text-align: center;      
+    background-color: #423620; 
+    border: 1px solid #e4c07d; 
+    border-radius: 8px;      
+    padding: 125px 25px;
+    margin-top: 10px;     
+    color: #e4c07d;         
+    font-size: 1.1rem;      
+}
