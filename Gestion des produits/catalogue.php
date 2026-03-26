@@ -5,7 +5,7 @@ $stmt = $pdo->query($sql);
 $produits = $stmt->fetchAll(PDO :: FETCH_ASSOC);
 if(isset($_GET['ajouter'])){
     if($_GET['ajouter'] == 'ajouter'){
-    echo "Produit ajouté avec succès<br>";
+    echo "<h5 class='msg'>Produit ajouté avec succès</h5><br>";
 }
 }
 ?>
